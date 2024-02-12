@@ -25,11 +25,11 @@ Before running this project, ensure that your system meets the following require
 ## Usage
 1. Start the Cypress test runner in headless:
     ```bash
-    npm cypress run
+    npx cypress run
     ```
 2. Start the Cypress test runner in window
    ```bash
-    npm cypress open
+    npx cypress open
     ```
    a. Click on a spec file to run the associated test suite.
 
