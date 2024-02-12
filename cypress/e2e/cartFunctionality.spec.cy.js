@@ -19,6 +19,7 @@ describe("SwagLabsLoginTest", () => {
     mainPageObj.elements.cart().contains("a", "1");
     mainPageObj.elements.openMenuButton().click();
     mainPageObj.elements.resetButton().click();
+    //after reseting cart item count should not appear
     mainPageObj.elements.cart().should("be.visible");
   })
 
@@ -29,6 +30,7 @@ describe("SwagLabsLoginTest", () => {
     mainPageObj.elements.addBackPack().click();
     mainPageObj.elements.addBikeLight().click();
     mainPageObj.elements.addBoltTShirt().click();
+    //item count three should appear in cart 
     mainPageObj.elements.cart().contains("a", "3");
     mainPageObj.elements.removeBackPack().click();
     mainPageObj.elements.removeBikeLight().click();
