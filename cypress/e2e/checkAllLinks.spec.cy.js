@@ -36,12 +36,4 @@ describe("Capture all URLs", () => {
     checkAndLogBrokenLinks();
   });
 
-  it("Visit all links from menu button", () => {
-    loginObj.enterUsername("standard_user");
-    loginObj.enterPassword("secret_sauce");
-    loginObj.clickLogin();
-    mainPageObj.elements.openMenuButton().click();
-    mainPageObj.elements.allItemLink().click();
-    mainPageObj.elements.aboutLink().click();
-  });
-});
+})

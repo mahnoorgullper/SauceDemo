@@ -7,6 +7,7 @@ This project contains end-to-end tests written using Cypress for [Sause Demo](ht
 Before running this project, ensure that your system meets the following requirements:
 - **Node.js**: Version 10.X.X
 - **npm**: Node Package Manager (usually comes with Node.js installation)
+- **chrome**: Version 121 or higher (For test runner)
 
 ## Installation
 1. Clone this repository:
