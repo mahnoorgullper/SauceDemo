@@ -1,1 +1,19 @@
-node_modules
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Cypress generated screenshots and videos
+cypress/screenshots/
+cypress/videos/
+
+# Ignore Cypress generated reports and logs
+cypress/reports/
+cypress/logs/
+
+# Ignore any files generated during test runs
+cypress/fixtures/
+cypress/results/
+
+# Ignore any other temporary or generated files
+*.log
+*.swp
+.DS_Store
