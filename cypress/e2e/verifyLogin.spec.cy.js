@@ -1,14 +1,13 @@
 import LoginPage from "../pageobjects/loginpage";
 import mainPage from "../pageobjects/mainPage";
-import { baseUrl } from '../config.js';
 
-
-describe("SwagLabsLoginTest and Logout" , () => {
+describe("SwagLabsLoginTest and Logout", () => {
   const loginObj = new LoginPage();
   const mainPageObj = new mainPage();
+  const baseURL = Cypress.env("baseUrl");
 
   beforeEach(function () {
-    cy.visit(baseUrl);
+    cy.visit(baseURL);
   });
 
   it("Verify login and logout with standard user", () => {
@@ -18,7 +17,7 @@ describe("SwagLabsLoginTest and Logout" , () => {
     mainPageObj.elements.cart().should("be.visible");
     mainPageObj.elements.openMenuButton().click();
     mainPageObj.elements.logoutLink().click();
-    loginObj.elements.usernameInput().should('be.visible');
+    loginObj.elements.usernameInput().should("be.visible");
   });
 
   it("Verify login with problem user", () => {
@@ -76,5 +75,4 @@ describe("SwagLabsLoginTest and Logout" , () => {
         "Epic sadface: Username and password do not match any user in this service"
       );
   });
-  
 });

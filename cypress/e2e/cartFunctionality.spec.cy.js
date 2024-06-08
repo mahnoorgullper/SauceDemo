@@ -1,14 +1,14 @@
 import LoginPage from "../pageobjects/loginpage";
 import mainPage from "../pageobjects/mainPage";
-import { baseUrl } from "../config";
+
 
 describe("SwagLabsLoginTest", () => {
   const loginObj = new LoginPage();
   const mainPageObj = new mainPage();
   const prices = [];
-
+  const baseURL = Cypress.env("baseUrl");
   beforeEach(function () {
-    cy.visit(baseUrl);
+    cy.visit(baseURL);
   });
 
   it("Verify reset functionality is removing items from cart", () => {

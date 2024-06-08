@@ -6,9 +6,7 @@ class LoginPage {
     passwordInput: () => cy.get('[data-test="password"]'),
     loginBtn: () => cy.get('[data-test="login-button"]'),
     error: () => cy.get('[data-test="error"]'),
-    
-    
-
+  
   
   };
 

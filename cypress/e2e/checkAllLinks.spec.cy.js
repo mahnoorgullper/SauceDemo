@@ -1,12 +1,13 @@
 import "@testing-library/cypress/add-commands";
 import LoginPage from "../pageobjects/loginpage";
 import mainPage from "../pageobjects/mainPage";
-import { baseUrl } from '../config.js';
 
 const loginObj = new LoginPage();
 const mainPageObj = new mainPage();
 let linksWithStatus = [];
 const capturedUrls = [];
+const baseURL = Cypress.env("baseUrl");
+
 function checkAndLogBrokenLinks() {
   cy.get("a")
     .each(($link) => {
@@ -25,7 +26,7 @@ function checkAndLogBrokenLinks() {
     });
 }
 beforeEach(function () {
-  cy.visit(baseUrl);
+  cy.visit(baseURL);
 });
 
 describe("Capture all URLs", () => {
@@ -35,5 +36,4 @@ describe("Capture all URLs", () => {
     loginObj.clickLogin();
     checkAndLogBrokenLinks();
   });
-
-})
+});
