@@ -1,7 +1,7 @@
 # Sause Demo (Cypress Project)
 
 ## Description
-This project contains end-to-end tests written using Cypress for [Sause Demo](https://www.saucedemo.com/). 
+This project contains end-to-end tests written using Cypress for [Sauce Demo](https://www.saucedemo.com/). 
 
 ## System Requirements
 Before running this project, ensure that your system meets the following requirements:
