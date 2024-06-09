@@ -1,4 +1,4 @@
-# Sause Demo (Cypress Project)
+# Sauce Demo (Cypress Project)
 
 ## Description
 This project contains end-to-end tests written using Cypress for [Sauce Demo](https://www.saucedemo.com/). 
